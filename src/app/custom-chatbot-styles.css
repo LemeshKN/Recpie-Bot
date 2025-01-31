@@ -1,0 +1,280 @@
+/* Container for user chat messages */
+.react-chatbot-kit-user-chat-message-container {
+    display: flex;
+    margin: 15px 0;
+    justify-content: flex-end;
+    animation: slideInRight 0.3s ease-out; /* Animation for user messages */
+  }
+  
+  /* User avatar container */
+  .react-chatbot-kit-user-avatar-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 12.5px;
+    background-color: #633bdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: popIn 0.3s ease-out; /* Animation for avatar */
+  }
+  
+  /* User avatar icon */
+  .react-chatbot-kit-user-avatar-icon {
+    fill: #f1f1f1;
+    width: 15px;
+    height: 15px;
+  }
+  
+  /* User chat message bubble */
+  .react-chatbot-kit-user-chat-message {
+    background-color: #6633FF;
+    padding: 10px;
+    border-bottom-left-radius: 12px ;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    font-size: 0.9rem;
+    color: #f1f1f1;
+    font-weight: medium;
+    text-align: left;
+    max-width: 70%; /* Limit message width */
+    animation: fadeIn 0.3s ease-out; /* Animation for message bubble */
+  }
+  
+  /* Container for bot chat messages */
+  .react-chatbot-kit-chat-bot-message-container {
+    display: flex;
+    margin: 15px 0;
+    justify-content: flex-start;
+    animation: slideInLeft 0.3s ease-out; /* Animation for bot messages */
+  }
+  
+  /* Bot avatar container */
+  .react-chatbot-kit-chat-bot-avatar-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    margin-right: 12.5px;
+    background-color: #371dcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: popIn 0.3s ease-out; /* Animation for avatar */
+  }
+  
+  /* Bot avatar icon */
+  .react-chatbot-kit-chat-bot-avatar-icon {
+    fill: #171414;
+    width: 22.5px;
+    height: 22.5px;
+  }
+  
+  /* Bot chat message bubble */
+  .react-chatbot-kit-chat-bot-message {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-bottom-left-radius: 12px ;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    border: 2px solid #6633FF;
+    font-size: 0.9rem;
+    color: #130909;
+    font-weight: medium;
+    max-width: 70%; /* Limit message width */
+    text-align: left;
+    animation: fadeIn 0.3s ease-out; /* Animation for message bubble */
+  }
+  
+  /* Main chatbot container */
+  .react-chatbot-kit-chat-container {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+  }
+  
+  /* Inner chatbot container */
+  .react-chatbot-kit-chat-inner-container {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Chatbot header */
+  .react-chatbot-kit-chat-header {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #6633FF;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #f1f1f1;
+    padding: 12.5px;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-out; /* Animation for header */
+  }
+  
+  /* Chat message container */
+  .react-chatbot-kit-chat-message-container {
+    flex: 1; /* Take up remaining space */
+    padding: 0 17.5px 10px 17.5px;
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  /* Chat input container */
+  .react-chatbot-kit-chat-input-container {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #dcdce8;
+    animation: slideUp 0.3s ease-out; /* Animation for input container */
+  }
+  
+  /* Chat input field */
+  .react-chatbot-kit-chat-input {
+    width: 100%;
+    padding: 12.5px;
+    border: none;
+    font-size: 0.85rem;
+    border-top: 1px solid #dcdce8;
+    border-radius:  45px ;
+    background-color: rgb(102, 51, 255);
+  }
+  
+  .react-chatbot-kit-chat-input-form {
+    width: 100%;
+    display: flex;
+    border-radius: 50px; /* Set border-radius to 5px for rounded edges */
+  }
+  
+  .react-chatbot-kit-chat-input::placeholder {
+    color: #f1f1f1;
+  }
+  
+  .react-chatbot-kit-chat-btn-send {
+    background-color: #6633FF;
+    width: 50px; 
+    height: 50px; 
+    color: #fff;
+    border-radius: 50%; 
+    border-width: 4px;
+    border-color:#130909;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    margin-left:  5px; 
+  }
+  
+  .react-chatbot-kit-chat-btn-send-icon {
+    fill: #f4ebeb;
+    width: 15px;
+    margin: 0 auto;
+  }
+  .react-chatbot-kit-chat-btn-send:hover {
+    background-color: #5522DD; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  /* Send button icon */
+  .react-chatbot-kit-chat-btn-send-icon {
+    fill: #f1f1f1;
+    width: 15px;
+    transition: transform 0.2s ease; /* Smooth transition for icon */
+  }
+  
+  .react-chatbot-kit-chat-btn-send:hover .react-chatbot-kit-chat-btn-send-icon {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+  }
+  
+  /* Loading animation */
+  .react-chatbot-kit-chat-bot-loading-icon-container {
+    height: 17px;
+    width: 25px;
+  }
+  
+  .chatbot-loader-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  #chatbot-loader #chatbot-loader-dot1 {
+    animation: load 1s infinite;
+  }
+  
+  #chatbot-loader #chatbot-loader-dot2 {
+    animation: load 1s infinite;
+    animation-delay: 0.2s;
+  }
+  
+  #chatbot-loader #chatbot-loader-dot3 {
+    animation: load 1s infinite;
+    animation-delay: 0.4s;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes popIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes load {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
