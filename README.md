@@ -42,6 +42,7 @@ The goal is to empower users to explore their kitchen skills, try new dishes, an
 
 ## File Structure
 
+```
 chatbot_project/
 │
 ├── simple_chat_bot/                # Main application directory
@@ -61,6 +62,7 @@ chatbot_project/
 │   └── ...                          # Other configuration files
 │
 └── ...                              # Other project files
+```
 
 ## Installation
 To get started with the Simple Chat Bot, follow these steps:
